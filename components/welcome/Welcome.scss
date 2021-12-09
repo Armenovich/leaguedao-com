@@ -1,0 +1,122 @@
+@import "../../public/assets/scss/Mixins.scss";
+
+.section--1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 120px;
+
+  @include lg {
+    padding-bottom: 0;
+  }
+  @include sm {
+    padding-top: 59px;
+  }
+
+  h1 {
+    font-family: $kumbhSans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 64px;
+    /* or 114% */
+    letter-spacing: -0.02em;
+    color: #ffffff;
+
+    @include sm {
+      font-size: 32px;
+      line-height: 40px;
+      /* or 125% */
+      text-align: center;
+    }
+    span {
+      color: #b1e4ff;
+    }
+  }
+
+  .welcome-txt-1 {
+    font-family: $manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    /* or 144% */
+    color: #ffffff;
+    opacity: 0.7;
+    margin-top: 32px;
+    @include sm {
+      font-size: 14px;
+      line-height: 140%;
+      /* or 20px */
+    }
+  }
+  .welcome-txt-2 {
+    font-family: $manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    /* or 144% */
+    color: #ffffff;
+    opacity: 0.5;
+    margin-top: 16px;
+
+    @include sm {
+      font-size: 14px;
+      line-height: 140%;
+      /* or 20px */
+    }
+  }
+  .custom--button--section--1 {
+    background: #ffe654;
+    box-shadow: 0px 6px 20px rgba(255, 230, 84, 0.35);
+    border-radius: 5px;
+    font-family: $manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+    text-align: center;
+    color: #252641;
+    padding: 20px 40px;
+    margin-top: 32px;
+
+    @include sm {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+  .main--container {
+    .section-1-first-flex {
+      width: 48%;
+      @include lg {
+        width: 100%;
+      }
+    }
+    .section-1-flex {
+      @include lg {
+        width: 100%;
+        text-align: center;
+      }
+      img {
+        position: absolute;
+        right: 0;
+        bottom: -10vw;
+
+        @include xl {
+          width: 50%;
+        }
+        @include lg {
+          position: relative;
+          bottom: -12vw;
+          width: 90%;
+        }
+      }
+    }
+  }
+}

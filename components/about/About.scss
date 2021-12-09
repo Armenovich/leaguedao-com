@@ -1,0 +1,68 @@
+@import "../../public/assets/scss/Mixins.scss";
+
+.section--3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding-top: 96px;
+  padding-bottom: 120px;
+
+  h2 {
+    font-family: $kumbhSans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+
+    @include sm {
+      font-size: 32px;
+      line-height: 140%;
+    }
+  }
+}
+
+.home-about-us-txt {
+  @include sm {
+    margin-bottom: 80px;
+  }
+  .welcome-txt-1 {
+    font-family: $manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 34px;
+    color: #ffffff;
+    opacity: 0.7;
+
+    @include sm {
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+  .welcome-txt-2 {
+    font-family: $manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #ffffff;
+    opacity: 0.5;
+
+    @include sm {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+}
+.home-footballscene {
+  width: 135%;
+
+  @include md {
+    width: 100%;
+  }
+}

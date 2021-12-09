@@ -1,0 +1,46 @@
+.custom--button--contained {
+  background: #ffe654 !important;
+  box-shadow: 0px 6px 20px rgba(255, 230, 84, 0.35) !important;
+  border-radius: 5px !important;
+  font-family: $manrope !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  line-height: 20px !important;
+  color: #252641 !important;
+  text-align: center !important;
+  padding: 21px 41px !important;
+  margin-top: 32px !important;
+  text-transform: none !important;
+}
+
+.custom--button--outlined {
+  background: #252641 !important;
+  border: 2px solid #ffe654 !important;
+  box-sizing: border-box !important;
+  filter: drop-shadow(0px 1px 4px rgba(255, 230, 84, 0.35)) !important;
+  border-radius: 6px !important;
+  font-family: "Manrope", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 120% !important;
+  color: #ffffff !important;
+  text-transform: none !important;
+}
+
+.custom--button--footer {
+  background: #ffe654 !important;
+  box-shadow: 0px 6px 20px rgba(255, 230, 84, 0.35) !important;
+  border-radius: 5px !important;
+  font-family: $manrope !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  line-height: 20px !important;
+  color: #252641 !important;
+  text-align: center !important;
+  padding: 11px 24px !important;
+  margin-top: 32px !important;
+  text-transform: none !important;
+}

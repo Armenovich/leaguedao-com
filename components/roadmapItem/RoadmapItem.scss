@@ -1,0 +1,83 @@
+.roadmap--item {
+  margin-top: 50px;
+
+  @include sm {
+    margin-top: 30px;
+  }
+
+  .roadmap--txt {
+    font-family: $manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 34px;
+    /* identical to box height, or 212% */
+    color: #252641;
+
+    &.open {
+      color: #19b9a1;
+    }
+
+    @include sm {
+      font-size: 12px;
+      line-height: 140%;
+    }
+  }
+  h3 {
+    font-family: $manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    /* identical to box height, or 123% */
+    color: #515167;
+    position: relative;
+    margin-top: 30px;
+    &.open {
+      color: #252641;
+      text-decoration-line: underline;
+
+      img {
+        transform: matrix(1, 0, 0, -1, 0, 0);
+      }
+    }
+
+    @include sm {
+      font-size: 16px;
+      line-height: 140%;
+      /* or 22px */
+    }
+
+    img {
+      position: absolute;
+      right: 0;
+      bottom: 15px;
+    }
+  }
+  h3:hover {
+    cursor: pointer;
+  }
+
+  .roadmap--toggle-txt {
+    font-family: $manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    color: #252641;
+    opacity: 0.6;
+    display: none;
+    margin-top: 20px;
+
+    @include sm {
+      font-size: 14px;
+      line-height: 140%;
+      /* or 20px */
+    }
+
+    &.open {
+      display: block;
+    }
+  }
+}

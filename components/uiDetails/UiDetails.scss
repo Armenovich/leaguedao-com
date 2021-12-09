@@ -1,0 +1,16 @@
+.parent--multi--color--border {
+  position: relative;
+  > div {
+    position: absolute;
+    bottom: 0;
+  }
+  .grey--border {
+    width: 100%;
+    height: 2px;
+    background-color: #d3d4d9;
+  }
+  .progress--border {
+    height: 4px;
+    background-color: #19b9a1;
+  }
+}

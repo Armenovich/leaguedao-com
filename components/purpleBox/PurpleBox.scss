@@ -1,0 +1,33 @@
+.purpleBox {
+  height: 93px;
+  background: #5865f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include sm {
+    padding: 40px 55px;
+    flex-wrap: wrap;
+  }
+
+  p {
+    font-family: $manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    /* identical to box height, or 178% */
+    color: #ffffff;
+
+    @include sm {
+      font-size: 16px;
+      line-height: 140%;
+      /* or 22px */
+      text-align: center;
+    }
+  }
+  img {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+}

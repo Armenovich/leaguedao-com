@@ -1,0 +1,56 @@
+@import "../public/assets/scss/Mixins.scss";
+@import "../public/assets/scss/Veriables.scss";
+@import "../components/header/Header.scss";
+@import "../components/footer/Footer.scss";
+@import "../components/nomoLeague/NomoLeague.scss";
+@import "../components/welcome/Welcome.scss";
+@import "../components/about/About.scss";
+@import "../components/roadmap/Roadmap.scss";
+@import "../components/whiteBox/WhiteBox.scss";
+@import "../components/roadmapItem/RoadmapItem.scss";
+@import "../components/uiDetails/UiDetails.scss";
+@import "../components/purpleBox/PurpleBox.scss";
+@import "../components/button/Button.scss";
+@import "../components/contributorItem/ContributorItem.scss";
+@import "../components/contributorsWlcm/ContributorsWlcm.scss";
+@import "../components/contributorsCards/ContributorsCards.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.root {
+  overflow: hidden;
+}
+
+.main--container {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include lg {
+    max-width: 840px;
+    display: block;
+    overflow: hidden;
+    padding: 0 7.5%;
+  }
+
+  > div {
+    width: calc(50% - 55px);
+    @include lg {
+      width: auto;
+      display: block;
+    }
+  }
+}
+
+.grey--bg {
+  background: #f4f4f4;
+}
+.hardBlue--bg {
+  background: #252641;
+}

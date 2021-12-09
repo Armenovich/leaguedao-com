@@ -1,0 +1,50 @@
+.section--2 {
+  background: #f4f4f4;
+  padding: 120px 0 167px;
+
+  @include sm {
+    padding: 80px 0;
+  }
+
+  h2 {
+    font-family: $kumbhSans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 64px;
+    /* or 114% */
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #252641;
+    margin-bottom: 71px;
+
+    @include lg {
+      text-align: center;
+    }
+    @include sm {
+      text-align: left;
+      font-size: 32px;
+      line-height: 140%;
+      /* or 45px */
+      margin-bottom: 23px;
+    }
+  }
+  .section--2--pos-div {
+    position: relative;
+
+    img:not(:first-child) {
+      position: absolute;
+      top: 265px;
+      left: 85px;
+
+      @include lg {
+        top: 69%;
+        left: -5%;
+      }
+      @include sm {
+        top: 75%;
+        left: 0%;
+      }
+    }
+  }
+}

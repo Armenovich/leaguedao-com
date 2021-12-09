@@ -1,0 +1,55 @@
+.white--box {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 9% 0;
+  text-align: center;
+  min-width: 540px;
+
+  @include xl {
+    min-width: auto;
+    max-width: 740px;
+    margin: 0 auto;
+  }
+
+  p {
+    font-family: $manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 34px;
+    /* or 155% */
+    text-align: center;
+    color: #252641;
+    opacity: 0.6;
+    margin-top: 20px;
+    padding: 0 9% 9%;
+
+    @include xl {
+      padding: 0 9%;
+    }
+    @include sm {
+      font-size: 14px;
+      line-height: 140%;
+      /* or 20px */
+    }
+  }
+}
+
+.custom--WB {
+  position: relative;
+  z-index: 4;
+
+  @include lg {
+    margin-bottom: 178px;
+  }
+  @include sm {
+    margin-bottom: 100px;
+  }
+
+  p {
+    padding: 0 11%;
+    @include sm {
+      padding: 0 6.5%;
+    }
+  }
+}
